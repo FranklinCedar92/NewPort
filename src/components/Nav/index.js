@@ -18,10 +18,10 @@ function Nav(props) {
     }*/
 
     return (
-        <header>
+        <header className='flex-row px-1'>
             <h2>
                 <a href="/">
-                    <span role="img" aria-label="myName">Franklin Cedar Brown</span>
+                    <span aria-label="myName">Franklin Cedar Brown</span>
                 </a>
             </h2>
             <nav>
@@ -31,7 +31,7 @@ function Nav(props) {
                             About Me
                         </a>
                     </li>
-                    <li>
+                    <li className='mx-2'>
                         <span>Contact</span>
                     </li>
                     {navOptions.map((category) => (
