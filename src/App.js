@@ -12,14 +12,13 @@ function App() {
         description: "Projects I've created and contributed to"
     },
     {
-        name: "Contact",
-        description: "Contact me!"
-    },
-    {
         name: "Resume",
         description: "Downloadable form available"
     }
   ]);
+
+  const [contactSelected, setContactSelected] = useState(false);
+  // add consts for resumeSelected and portfolioSelected to also make them appear conditionally
 
   const [currentCategory, setCurrentCategory] = useState(navOptions[0]);
 
@@ -29,14 +28,20 @@ function App() {
       <Nav
       navOptions={navOptions}
       setCurrentCategory={setCurrentCategory}
-      currentCategory={currentCategory}>
+      currentCategory={currentCategory}
+      contactSelected={contactSelected}
+      setContactSelected={setContactSelected}>
       </Nav>
       <main>
-        <div>
+        {!contactSelected ? (
+          <>
+            <Projects currentCategory={currentCategory}></Projects>
+            <About></About>
+          </>
+        ) : (
           <ContactForm></ContactForm>
-          <Projects currentCategory={currentCategory}></Projects>
-          <About></About>
-        </div>
+
+        )}
       </main>
     </div>
   );
