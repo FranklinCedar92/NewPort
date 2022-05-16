@@ -4,6 +4,7 @@ import Nav from './components/Nav';
 import Projects from './components/Projects'
 import ContactForm from './components/Contact';
 import Footer from './components/Footer';
+import Resume from './components/Resume';
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
     },
     {
         name: "Resume",
-        description: "Downloadable form available"
+        description: "Click the image below to download my resume."
     }
   ]);
 
@@ -46,6 +47,7 @@ function App() {
          { !contactSelected  && !projectsSelected && !resumeSelected ? (
           <>
             <Projects></Projects>
+            <Resume></Resume>
             <About></About>
           </>
           ) : (
