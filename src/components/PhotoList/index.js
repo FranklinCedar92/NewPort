@@ -1,40 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const PhotoList = ({ category }) => {
-
-    /*const [photos] = useState([
-        {
-            name: 'RunBuddy',
-            category: 'portfolio',
-            description: 'RunBuddy'
-        },
-        {
-            name: 'EmpyTracky',
-            category: 'portfolio',
-            description: 'EmpyTracky'
-        },
-        {
-            name: 'Horiseon',
-            category: 'portfolio',
-            description: 'Horiseon'
-        },
-        {
-            name: 'HyperSthetic',
-            category: 'portfolio',
-            description: 'HyperSthetic'
-        },
-        {
-            name: 'Lexiconne',
-            category: 'portfolio',
-            description: 'Lexiconne'
-        },
-        {
-            name: 'Notey_McTaker',
-            category: 'portfolio',
-            description: 'Notey_McTaker'
-        }
-    ]); */
-
+const Projects = () => {
 
     return (
         <div>
@@ -69,14 +35,14 @@ const PhotoList = ({ category }) => {
                 </div>   
                 <div>
                 <h3>Notey McTaker</h3>
-                    <img src='../../assets/portfolio/Notey_McTaker.png' style={{ width: "40%" }} alt="run buddy"/>
+                    <img src='../../assets/portfolio/Notey_McTaker.png' style={{ width: "40%" }} alt="note taker"/>
                     <p>
                         See the <a href="https://github.com/FranklinCedar92/Notey_McTaker">repo</a> or the <a href="https://secure-scrubland-32243.herokuapp.com/">page</a>.
                     </p>
                 </div>   
                 <div>
                 <h3>L'exiconne</h3>
-                    <img src='../../assets/portfolio/Lexiconne.png' style={{ width: "40%" }} alt="run buddy"/>
+                    <img src='../../assets/portfolio/Lexiconne.png' style={{ width: "40%" }} alt="lexicon"/>
                     <p>
                         See the <a href="https://github.com/FranklinCedar92/Lexiconne_GP2">repo</a> or the <a href="https://cryptic-chamber-15653.herokuapp.com/login">page</a>.
                     </p>
@@ -86,7 +52,7 @@ const PhotoList = ({ category }) => {
     )
 }
 
-export default PhotoList;
+export default Projects;
 
 /*
 
@@ -103,3 +69,36 @@ const currentPhotos = photos.filter((photo) => photo.category === category);
     />
 ))}
 */
+
+/*const [photos] = useState([
+        {
+            name: 'RunBuddy',
+            category: 'portfolio',
+            description: 'RunBuddy'
+        },
+        {
+            name: 'EmpyTracky',
+            category: 'portfolio',
+            description: 'EmpyTracky'
+        },
+        {
+            name: 'Horiseon',
+            category: 'portfolio',
+            description: 'Horiseon'
+        },
+        {
+            name: 'HyperSthetic',
+            category: 'portfolio',
+            description: 'HyperSthetic'
+        },
+        {
+            name: 'Lexiconne',
+            category: 'portfolio',
+            description: 'Lexiconne'
+        },
+        {
+            name: 'Notey_McTaker',
+            category: 'portfolio',
+            description: 'Notey_McTaker'
+        }
+    ]); */

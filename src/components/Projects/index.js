@@ -1,17 +1,21 @@
 import React from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
-import PhotoList from '../PhotoList';
+import Projects from '../PhotoList';
 
-function Projects(props) {
+function ProjectList(props) {
 
-    const {currentCategory} = props;
+    const currentCategory = {
+        name: "Projects",
+        description: "Projects I've created or contributed to"
+    };
+
     return (
         <section>
-            <h1>{capitalizeFirstLetter(currentCategory.name)}</h1>
+            <h1>{currentCategory.name}</h1>
             <p>{currentCategory.description}</p>
-            <PhotoList category={currentCategory.name}/>
+            <Projects />
         </section>
     );
 }
 
-export default Projects;
+export default ProjectList;
