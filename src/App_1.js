@@ -8,54 +8,52 @@ import Resume from './components/Resume';
 
 function App() {
 
-  const [pageSelected, setPageSelected] = useState("about");
+  const [contactSelected, setContactSelected] = useState(false);
+  const [projectsSelected, setProjectsSelected] = useState(false);
+  const [resumeSelected, setResumeSelected] = useState(false);
 
   const [navOptions] = useState([
     {
         name: "Projects",
-        data: 'projects',
         description: "Projects I've created and contributed to"
     },
     {
         name: "Resume",
-        data:"resume",
         description: "Click the image below to download my resume."
-    },
-    {
-      name: "About",
-      data: 'about',
-      description: ''
-    },
-    {
-      name: "Contact",
-      data: 'contact',
-      description: ''
     }
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(navOptions[0]);
 
-  const randomFunc = () => {
-    if(pageSelected === "about")
-        return <About />
-      else if(pageSelected === "resume")
-        return <Resume />
-      else if(pageSelected === "projects")
-        return <Projects />
-      else return <ContactForm />   
-  }
+  console.log(contactSelected);
+  console.log(projectsSelected);
+  console.log(resumeSelected);
+  console.log(currentCategory);
 
   return (
     <div>
       <Nav
       navOptions={navOptions}
-      pageSelected={pageSelected}
-      setPageSelected={setPageSelected}
       setCurrentCategory={setCurrentCategory}
-     >
+      currentCategory={currentCategory}
+      contactSelected={contactSelected}
+      setContactSelected={setContactSelected}
+      projectsSelected={projectsSelected}
+      setProjectsSelected={setProjectsSelected}
+      resumeSelected={resumeSelected}
+      setResumeSelected={setResumeSelected}>
       </Nav>
       <main>
-       {randomFunc()}   
+         { !contactSelected  && !projectsSelected && !resumeSelected ? (
+          <>
+            <Projects></Projects>
+            <Resume></Resume>
+            <About></About>
+          </>
+          ) : (
+          <ContactForm></ContactForm>
+          )}
+          
          
         
       </main>

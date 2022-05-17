@@ -1,19 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
 
     const {
         navOptions = [],
-        pageSelected,
-        setPageSelected
+        setCurrentCategory,
+        currentCategory,
+        setContactSelected
     } = props;
 
-    const [ currentCategory, setCurrentCategory] = useState(pageSelected);
-
-    // useEffect(() => {
-    //     document.title = capitalizeFirstLetter(currentCategory.name);
-    // }, [currentCategory]);
+    useEffect(() => {
+        document.title = capitalizeFirstLetter(currentCategory.name);
+    }, [currentCategory]);
 
     /*function categorySelected(name) {
         console.log(`${name} clicked`)
@@ -29,21 +28,21 @@ function Nav(props) {
             </h2>
             <nav>
                 <ul className="flex-row">
-                    {/* <li className='mx-2'>
-                        <a href='#about' onClick={() => setPageSelected(about)}>
+                    <li className='mx-2'>
+                        <a href='#about' onClick={() => setContactSelected(false)}>
                             About Me
                         </a>
                     </li>
                     <li className="mx-2">
-                        <a href="#contact" onClick={() => setPageSelected(contact)}>Contact</a>
-                    </li> */}
-                    {navOptions.map((category,key) => (
+                        <a href="#contact" onClick={() => setContactSelected(true)}>Contact</a>
+                    </li>
+                    {navOptions.map((category) => (
                         <li className={`mx-2 ${
                             currentCategory.name === category.name && 'navActive'
                         }`} key={category.name}>
-                            <a href={`#${category.data}`} onClick={() => {
-                                setCurrentCategory(category.data);
-                                setPageSelected(category.data);
+                            <a href={`#${category.name}`} onClick={() => {
+                                setCurrentCategory(category);
+                                setContactSelected(false);
                             }}>
                                 {category.name}
                             </a>
