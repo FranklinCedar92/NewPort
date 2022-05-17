@@ -65,37 +65,3 @@ function App() {
 }
 
 export default App;
-
-/*
-{ !contactSelected && !resumeSelected ? (
-            <>
-              <Projects></Projects>
-            </>
-          ) : (
-            <About></About>
-          )}
-
- <Projects currentCategory={currentCategory}></Projects>
-
-return (
-    <div>
-      <Nav
-      navOptions={navOptions}
-      setCurrentCategory={setCurrentCategory}
-      currentCategory={currentCategory}
-      contactSelected={contactSelected}
-      setContactSelected={setContactSelected}>
-      </Nav>
-      <main>
-        {!contactSelected ? (
-          <>
-            <Projects currentCategory={currentCategory}></Projects>
-            <About></About>
-          </>
-        ) : (
-          <ContactForm></ContactForm>
-        )}
-      </main>
-    </div>
-  );
-*/

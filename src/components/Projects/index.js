@@ -1,5 +1,4 @@
 import React from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
 import Projects from '../PhotoList';
 
 function ProjectList(props) {

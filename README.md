@@ -10,7 +10,7 @@ Please use this as you would like. Feel free to peruse and maybe hire me. Use "n
 [Screenshot](./src/assets/screenshot.png)
 
 ### Deployment
-[Pages](https://franklincedar92.github.io/NewPort/)
+[Pages](https://franklincedar92.github.io/NewPortApp/)
 
 ### Contact
 Please (really) contact me with suggestions or questions at franklin.c.brown@gmail.com

@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
+import React, { useState } from 'react';
 
 function Nav(props) {
 
