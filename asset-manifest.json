@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/NewPortApp/static/css/main.1a118f58.css",
+    "main.js": "/NewPortApp/static/js/main.7f63993d.js",
+    "static/js/787.d168572b.chunk.js": "/NewPortApp/static/js/787.d168572b.chunk.js",
+    "static/media/Intro.jpg": "/NewPortApp/static/media/Intro.42c2ee5023c03201c0ad.jpg",
+    "static/media/RunBuddy.jpg": "/NewPortApp/static/media/RunBuddy.0b3ef96ab454daf9b02a.jpg",
+    "static/media/OhSnap.png": "/NewPortApp/static/media/OhSnap.f8bfba22c6d1791fbd25.png",
+    "static/media/Lexiconne.png": "/NewPortApp/static/media/Lexiconne.2afb44fe518c830e14d2.png",
+    "static/media/HyperSthetic.png": "/NewPortApp/static/media/HyperSthetic.a1e28b40b72eb77f94a5.png",
+    "static/media/EmpyTracky.png": "/NewPortApp/static/media/EmpyTracky.1e628768d0456d8b5209.png",
+    "static/media/resume.png": "/NewPortApp/static/media/resume.004d00496ff09958c82f.png",
+    "static/media/Notey_McTaker.png": "/NewPortApp/static/media/Notey_McTaker.81560d3a91c81928e76f.png",
+    "index.html": "/NewPortApp/index.html",
+    "main.1a118f58.css.map": "/NewPortApp/static/css/main.1a118f58.css.map",
+    "main.7f63993d.js.map": "/NewPortApp/static/js/main.7f63993d.js.map",
+    "787.d168572b.chunk.js.map": "/NewPortApp/static/js/787.d168572b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a118f58.css",
+    "static/js/main.7f63993d.js"
+  ]
+}
