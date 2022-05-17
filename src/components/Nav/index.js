@@ -11,15 +11,6 @@ function Nav(props) {
 
     const [ currentCategory, setCurrentCategory] = useState(pageSelected);
 
-    // useEffect(() => {
-    //     document.title = capitalizeFirstLetter(currentCategory.name);
-    // }, [currentCategory]);
-
-    /*function categorySelected(name) {
-        console.log(`${name} clicked`)
-    }*/
-
-    //Because there's only one other Nav option (Portfolio)
     return (
         <header className='flex-row px-1'>
             <h2>
@@ -28,15 +19,8 @@ function Nav(props) {
                 </a>
             </h2>
             <nav>
+                {/* conditionally render each category */}
                 <ul className="flex-row">
-                    {/* <li className='mx-2'>
-                        <a href='#about' onClick={() => setPageSelected(about)}>
-                            About Me
-                        </a>
-                    </li>
-                    <li className="mx-2">
-                        <a href="#contact" onClick={() => setPageSelected(contact)}>Contact</a>
-                    </li> */}
                     {navOptions.map((category,key) => (
                         <li className={`mx-2 ${
                             currentCategory.name === category.name && 'navActive'

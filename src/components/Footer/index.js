@@ -3,16 +3,18 @@ import React from 'react';
 function Footer() {
     return (
         <div>
-            <h5>Find me on:</h5>
-            <p>
-                <a href="https://github.com/FranklinCedar92">GitHub</a>
-            </p>
-            <p>
-                <a href="https://www.linkedin.com/in/fcbrown/">LinkedIn</a>
-            </p>
-            <p>
-                <a href="https://www.instagram.com/f.c.brown/?hl=en">Instagram</a>
-            </p>
+            <h4>Find me on:</h4>
+            <div className='flex-row'>
+                <p className='mx-3'>
+                    <a href="https://github.com/FranklinCedar92">GitHub</a>
+                </p>
+                <p className='mx-3'>
+                    <a href="https://www.linkedin.com/in/fcbrown/">LinkedIn</a>
+                </p>
+                <p className='mx-3'>
+                    <a href="https://www.instagram.com/f.c.brown/?hl=en">Instagram</a>
+                </p>
+            </div>
         </div>
     )
 };

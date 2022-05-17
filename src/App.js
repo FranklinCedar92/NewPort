@@ -12,6 +12,11 @@ function App() {
 
   const [navOptions] = useState([
     {
+      name: "About Me",
+      data: 'about',
+      description: ''
+    },
+    {
         name: "Projects",
         data: 'projects',
         description: "Projects I've created and contributed to"
@@ -20,11 +25,6 @@ function App() {
         name: "Resume",
         data:"resume",
         description: "Click the image below to download my resume."
-    },
-    {
-      name: "About",
-      data: 'about',
-      description: ''
     },
     {
       name: "Contact",

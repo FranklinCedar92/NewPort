@@ -15,6 +15,7 @@ code {
 
 h4 {
   font: #333333;
+  margin: 10px 0 5px 0;
 }
 
 div {
@@ -47,10 +48,15 @@ a:active {
 
 .flex-row {
   display: flex;
+  flex-direction: row;
 }
 
 .mx-2 {
   padding: 5px;
+}
+
+.mx-3 {
+  padding: 0 3px 0 3px;
 }
 
 .my-5 {

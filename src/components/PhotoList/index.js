@@ -1,4 +1,5 @@
 import React from 'react';
+// Each photo imported
 import RunBuddyPhoto from "../../assets/portfolio/RunBuddy.jpg";
 import EmpyTrackyPhoto from '../../assets/portfolio/EmpyTracky.png';
 import photoPortPhoto from "../../assets/portfolio/OhSnap.png";
@@ -8,6 +9,7 @@ import lexPhoto from "../../assets/portfolio/Lexiconne.png";
 
 const Projects = () => {
 
+    //list of projects
     return (
         <div>
             <div className='flex-row projects'>
@@ -60,51 +62,3 @@ const Projects = () => {
 
 export default Projects;
 
-/*
-
-const currentPhotos = photos.filter((photo) => photo.category === category);
-
-
-{currentPhotos.map((image, i) => (
-    <img 
-    src={require(`../../assets/${category}/${i}.jpg`).default} 
-    style={{ width: "50%" }} 
-    alt={image.name} 
-    className="img-thumbnail mx-1" 
-    key={image.name} 
-    />
-))}
-*/
-
-/*const [photos] = useState([
-        {
-            name: 'RunBuddy',
-            category: 'portfolio',
-            description: 'RunBuddy'
-        },
-        {
-            name: 'EmpyTracky',
-            category: 'portfolio',
-            description: 'EmpyTracky'
-        },
-        {
-            name: 'Horiseon',
-            category: 'portfolio',
-            description: 'Horiseon'
-        },
-        {
-            name: 'HyperSthetic',
-            category: 'portfolio',
-            description: 'HyperSthetic'
-        },
-        {
-            name: 'Lexiconne',
-            category: 'portfolio',
-            description: 'Lexiconne'
-        },
-        {
-            name: 'Notey_McTaker',
-            category: 'portfolio',
-            description: 'Notey_McTaker'
-        }
-    ]); */
