@@ -6,6 +6,7 @@ import photoPortPhoto from "../../assets/portfolio/OhSnap.png";
 import hyperStheticPhoto from "../../assets/portfolio/HyperSthetic.png";
 import noteTakerPhoto from "../../assets/portfolio/Notey_McTaker.png";
 import lexPhoto from "../../assets/portfolio/Lexiconne.png";
+import BUPhoto from "../../assets/portfolio/BarterUp.png";
 
 const Projects = () => {
 
@@ -13,6 +14,13 @@ const Projects = () => {
     return (
         <div>
             <div className='flex-row projects'>
+            <div>
+                    <h3>BarterUp</h3>
+                    <img src={BUPhoto} style={{ width: "40%" }} alt="BarterUp"/>
+                    <p>
+                        See the <a href="https://github.com/troat9824/BarterUp">repo</a> or the <a href="https://stark-plateau-45861.herokuapp.com/">page</a>.
+                    </p>
+                </div>   
                 <div>
                     <h3>RunBuddy</h3>
                     <img src={RunBuddyPhoto} style={{ width: "40%" }} alt="run buddy"/>
